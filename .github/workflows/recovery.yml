@@ -13,11 +13,11 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/Gofaraway71/twrp_rui2_RMX6785'
+        default: 'https://github.com/albatron34000/twrp_realme_RM6785'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'main'
+        default: 'android_11'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
@@ -103,8 +103,8 @@ jobs:
         mkdir workspace
         cd workspace
         echo "::set-output name=pwd::$(pwd)"
-        git config --global user.name "Gofaraway71"
-        git config --global user.email "aalbatron@gmail.com"
+        git config --global user.name "albatron34000"
+        git config --global user.email "albatron342016@gmail.com"
         repo init --depth=1 -u ${{ github.event.inputs.MANIFEST_URL }} -b ${{ github.event.inputs.MANIFEST_BRANCH }}
       id: pwd
           
